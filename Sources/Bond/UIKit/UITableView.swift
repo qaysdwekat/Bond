@@ -390,13 +390,13 @@
         }
     }
 
-    public extension SignalProtocol where Element: DataSourceEventProtocol, Element.BatchKind == BatchKindDiff, Error == NoError {
-
-        @available(*, deprecated, message: "Use an overload that accepts TableViewBinder object instead of deprecated TableViewBond.")
-        @discardableResult
-        public func bind<B: TableViewBond>(to tableView: UITableView, using bond: B) -> Disposable where B.DataSource == DataSource {
-            return bind(to: tableView, using: TableViewBondBinder(bond))
-        }
-    }
+//    public extension SignalProtocol where Element: DataSourceEventProtocol, Element.BatchKind == BatchKindDiff, Error == NoError {
+//
+//        @available(*, deprecated, message: "Use an overload that accepts TableViewBinder object instead of deprecated TableViewBond.")
+//        @discardableResult
+//        public func bind<B: TableViewBond>(to tableView: UITableView, using bond: B) -> Disposable where B.DataSource == DataSource {
+//            return bind(to: tableView, using: TableViewBondBinder(bond))
+//        }
+//    }
 
 #endif
